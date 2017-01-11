@@ -2,7 +2,7 @@ name := "problems"
 
 organization := "com.snapswap"
 
-version := "1.0.0"
+version := "1.0.1"
 
 scalaVersion := "2.11.8"
 
@@ -30,9 +30,9 @@ resolvers ++= Seq(
 )
 
 libraryDependencies ++= {
-  val akkaV = "2.4.11"
+  val akkaV = "10.0.1"
   Seq(
-    "com.typesafe.akka" %% "akka-http-spray-json-experimental" % akkaV,
+    "com.typesafe.akka" %% "akka-http-spray-json" % akkaV,
     "org.scalatest" %% "scalatest" % "3.0.0" % "test",
     "com.typesafe.akka" %% "akka-http-testkit" % akkaV % "test"
   )
