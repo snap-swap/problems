@@ -2,9 +2,9 @@ name := "problems"
 
 organization := "com.snapswap"
 
-version := "1.0.3"
+version := "1.0.4"
 
-scalaVersion := "2.11.12"
+crossScalaVersions := Seq("2.11.12", "2.12.5")
 
 scalacOptions := Seq(
   "-feature",
@@ -13,7 +13,7 @@ scalacOptions := Seq(
   "-language:existentials",
   "-language:higherKinds",
   "-language:implicitConversions",
-  "-Xfatal-warnings",
+//  "-Xfatal-warnings",
   "-Xlint",
   "-Yno-adapted-args",
   "-Ywarn-dead-code",

@@ -10,7 +10,7 @@ import spray.json._
 
 package object http {
 
-  val `application/problem+json` = MediaType.customWithFixedCharset(
+  val `application/problem+json`: MediaType = MediaType.customWithFixedCharset(
     "application", "problem+json",
     HttpCharsets.`UTF-8`
   )
