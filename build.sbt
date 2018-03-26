@@ -2,9 +2,9 @@ name := "problems"
 
 organization := "com.snapswap"
 
-version := "1.0.2"
+version := "1.0.3"
 
-scalaVersion := "2.11.11"
+scalaVersion := "2.11.12"
 
 scalacOptions := Seq(
   "-feature",
@@ -30,11 +30,13 @@ resolvers ++= Seq(
 )
 
 libraryDependencies ++= {
-  val akkaV = "10.0.10"
+  val akkaV = "2.5.11"
+  val akkaHttpV = "10.1.0"
   Seq(
-    "com.typesafe.akka" %% "akka-http-spray-json" % akkaV,
-    "org.scalatest" %% "scalatest" % "3.0.1" % "test",
-    "com.typesafe.akka" %% "akka-http-testkit" % akkaV % "test"
+    "com.typesafe.akka" %% "akka-stream" % akkaV,
+    "com.typesafe.akka" %% "akka-http-spray-json" % akkaHttpV,
+    "org.scalatest" %% "scalatest" % "3.0.5" % "test",
+    "com.typesafe.akka" %% "akka-http-testkit" % akkaHttpV % "test"
   )
 }
 
