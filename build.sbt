@@ -2,7 +2,7 @@ name := "problems"
 
 organization := "com.snapswap"
 
-version := "1.0.4"
+version := "1.0.5"
 
 crossScalaVersions := Seq("2.11.12", "2.12.5")
 
@@ -30,8 +30,8 @@ resolvers ++= Seq(
 )
 
 libraryDependencies ++= {
-  val akkaV = "2.5.11"
-  val akkaHttpV = "10.1.0"
+  val akkaV = "2.4.19"
+  val akkaHttpV = "10.0.10"
   Seq(
     "com.typesafe.akka" %% "akka-stream" % akkaV,
     "com.typesafe.akka" %% "akka-http-spray-json" % akkaHttpV,

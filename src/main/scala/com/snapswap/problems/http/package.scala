@@ -89,7 +89,7 @@ package object http {
     case r if classTag[R] == ClassTag(r.getClass) =>
       val p = r.asInstanceOf[R].toProblem
 
-      log.warning(s"Rejection reason: ${p.toString}")
+      log.warning(s"Rejection reason: ${p.detail}")
 
       complete {
         (p.status, p.toJson)

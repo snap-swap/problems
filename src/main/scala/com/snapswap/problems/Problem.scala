@@ -32,6 +32,7 @@ trait Problem {
     */
   def detail: String = status.defaultMessage()
 
+  override def toString: String = Problem.ProblemJsonWriter.write(this).compactPrint
 }
 
 case class InternalProblem(override val detail: String) extends Problem {
